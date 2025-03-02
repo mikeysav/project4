@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alice in Wonderland - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Literata:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Literata', serif;
+            background: radial-gradient(circle, #fef8e7, #e0c3a3);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background: linear-gradient(to right, #7a4b2c, #b08054);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            width: 100%;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+            border-bottom: 5px solid #54321f;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            margin-top: 15px;
+            background: rgba(200, 159, 121, 0.9);
+            padding: 15px;
+            width: 85%;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.3em;
+            transition: all 0.3s ease;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background: #54321f;
+            color: #fef8e7;
+        }
+
+        main {
+            max-width: 900px;
+            margin-top: 30px;
+            padding: 40px;
+            background: white;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        main img {
+            max-width: 100%;
+            display: block;
+            margin: 25px auto;
+            border: 4px solid #8b5e3b;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        main img:hover {
+            transform: scale(1.05);
+        }
+
+        p {
+            font-size: 1.3em;
+            text-align: justify;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #7a4b2c;
+            color: white;
+            width: 100%;
+            margin-top: 30px;
+            border-top: 5px solid #54321f;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Alice's Adventures in Wonderland</h1>
+        <p style="text-align: center;">by Lewis Carroll</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="chapter1.html">Chapter 1</a></li>
+            <li><a href="chapter2.html">Chapter 2</a></li>
+            <li><a href="chapter3.html">Chapter 3</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="intro">
+            <h2>Welcome to Alice's Adventures</h2>
+            <img src="alice_1.jpg" alt="Alice in Wonderland Cover">
+            <p>Welcome to this electronic edition of <i>Alice's Adventures in Wonderland</i>. Enjoy reading the first three chapters of this classic tale, with beautiful illustrations included.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Michael Savencu | Public Domain Text & Images</p>
+    </footer>
+</body>
+</html>
